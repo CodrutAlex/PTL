@@ -1,3 +1,10 @@
+<!--instagram-->
+<footer>
+<span>creat de 
+       <a style="color:#00b489;" href="https://www.instagram.com/codrutxalex">@codrutxalex</a>
+       </span>
+	   </footer>
+<!--script insert-->
 <link rel="stylesheet" href="css.css" />
 <script src="script.js"></script>
 
@@ -14,7 +21,7 @@
         </div>
     </a>
   
-    <!--buton download-->
+    <!--buton download2-->
   <a href="PTL31-74.odt" class="button dark">
         <ul>
             <li>PTL 31-74</li>
@@ -26,8 +33,8 @@
         </div>
     </a>
 <DIV> </DIV>    
-<!--in lucru PBR INCOMING -->
-<a href="" class="button dark">
+<!--buton download3 -->
+<a href="PBR1-30.odt" class="button dark">
         <ul>
             <li>PBR 1-30</li>
             <li>&#68;ownloading</li>
@@ -37,7 +44,8 @@
             <svg viewBox="0 0 24 24"></svg>
         </div>
     </a>
-<a href="" class="button dark">
+ <!--buton download4 -->
+<a href="PBR31-74.odt" class="button dark">
         <ul>
             <li>PBR 31-74</li>
             <li>&#68;ownloading</li>
@@ -50,10 +58,24 @@
     
 </div>
 
-<footer>
-      
-     <span>creat de 
-       <a style="color:#00b489;" href="https://www.instagram.com/codrutxalex">@codrutxalex</a>
-       </span> 
-     </span>
-    </footer>
+ <!--barcode generator low buget sa mor eu -->
+
+        <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+        <script>
+            function generateBarcode (value) {
+                JsBarcode('#barcode', value, {
+                    format: 'code128',
+                    displayValue: false,
+                });
+            }
+        </script>
+<div><div/>
+        <h1>Barcode Generator</h1>
+        <div>
+            <label>Text: </label>
+            <input name="barcode" type="text" onchange="generateBarcode(this.value)"/>
+        </div>
+        <div>
+            <img id="barcode">
+        </div>
+		
